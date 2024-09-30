@@ -1,0 +1,23 @@
+.todo-form {
+  display: flex;
+  margin-bottom: 20px;
+
+  &__input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+  }
+
+  &__button {
+    padding: 10px 10px;
+    background-color: #d4edda;
+    color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
