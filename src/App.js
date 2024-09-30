@@ -52,10 +52,12 @@ const App = () => {
   };
 
   const filteredTodos = todos.filter((todo) => {
-    if (filter === 'all') return true;
-    if (filter === 'completed') return todo.completed;
-    if (filter === 'active') return !todo.completed;
-  });
+  if (filter === 'all') return true;
+  if (filter === 'completed') return todo.completed;
+  if (filter === 'active') return !todo.completed;
+  return false;
+});
+
 
   const sortedTodos = filteredTodos.sort((a, b) => {
     if (sortBy === 'createdAt') {
